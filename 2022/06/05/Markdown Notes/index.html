@@ -29,7 +29,7 @@
 <meta property="og:description" content="换行换段两段之间要有一整个空行（两次回车）。 123First paragraphSecond paragraph  两行之间要有两个空格及一个换行。 12First line  Second line  分割线可以用三个星号 *** 标题用#数量代表标题等级1~6个#代表不同标题等级。由于兼容性问题，最好在后面跟一个空格 # Heading 1 ### Heading 3 ###### Head">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-06-05T03:31:32.000Z">
-<meta property="article:modified_time" content="2022-06-07T01:37:42.205Z">
+<meta property="article:modified_time" content="2022-06-07T01:43:09.613Z">
 <meta property="article:author" content="Muyuan Li">
 <meta property="article:tag" content="Markdown">
 <meta property="article:tag" content="Chinese">
@@ -223,7 +223,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-06-07 09:37:42" itemprop="dateModified" datetime="2022-06-07T09:37:42+08:00">2022-06-07</time>
+      <time title="Modified: 2022-06-07 09:43:09" itemprop="dateModified" datetime="2022-06-07T09:43:09+08:00">2022-06-07</time>
     </span>
 
   
@@ -261,7 +261,8 @@
 <p>剧透框前方加大于感叹，并不是所有的Markdown都支持(目前博客不支持)<br><code>&gt;!spoiler</code></p>
 <hr>
 <p>脚注见示例 [^1]</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">some texts [^ligma]</span><br><span class="line"></span><br><span class="line">[`ligma]: balls</span><br><span class="line">```  </span><br><span class="line">[^1]: This is the first footnote.</span><br><span class="line"># 列表</span><br><span class="line">* 无序列表可以用`*`，`+`或`-`任意一种在一行开头，后跟空格。</span><br><span class="line">* 比如 `* list item 1`</span><br><span class="line">***</span><br><span class="line">1. 有序列表用`&lt;数字&gt;. `表示，数字本身并无关。</span><br><span class="line">2. 比如 `1. first item`</span><br><span class="line">***</span><br><span class="line">1. 嵌套用tab或四个空格分开</span><br><span class="line">	* 可以有序无序混用</span><br><span class="line">2. 比如  </span><br></pre></td></tr></table></figure>
+<p>[^1]: This is the first footnote.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">some texts [^ligma]</span><br><span class="line"></span><br><span class="line">[`ligma]: balls</span><br><span class="line">```  </span><br><span class="line"># 列表</span><br><span class="line">* 无序列表可以用`*`，`+`或`-`任意一种在一行开头，后跟空格。</span><br><span class="line">* 比如 `* list item 1`</span><br><span class="line">***</span><br><span class="line">1. 有序列表用`&lt;数字&gt;. `表示，数字本身并无关。</span><br><span class="line">2. 比如 `1. first item`</span><br><span class="line">***</span><br><span class="line">1. 嵌套用tab或四个空格分开</span><br><span class="line">	* 可以有序无序混用</span><br><span class="line">2. 比如  </span><br></pre></td></tr></table></figure>
 <ol>
 <li>Item 1<ul>
 <li>item 1.1</li>
@@ -269,7 +270,8 @@
 </ul>
 </li>
 <li>Item 2<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 引用</span><br><span class="line">&gt; 引用用开头的`&gt;`来表示，可以套用多个，已经列表等格式  </span><br><span class="line">`&gt; Ligma`</span><br><span class="line"></span><br><span class="line"># 代码</span><br><span class="line">用斜引号`\``，段落中单个环绕，大段代码三个环绕。三个环绕时可第一行制定语言</span><br></pre></td></tr></table></figure>
-```java<br>void fun(){<br> System.out.println(“Hi!”);<br>}<br>```<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 转义</span><br><span class="line">可以用反斜线`\`进行特殊字符的转义。</span><br><span class="line"></span><br><span class="line">特殊字符`&lt;`以及`&amp;`因为可用于html的起始标签及标记实体，需要用`&amp;lt;`和`&amp;amp;`</span><br><span class="line"></span><br><span class="line"># 表格</span><br><span class="line">见示例  </span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">fun</span><span class="params">()</span>&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;Hi!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 转义</span><br><span class="line">可以用反斜线`\`进行特殊字符的转义。</span><br><span class="line"></span><br><span class="line">特殊字符`&lt;`以及`&amp;`因为可用于html的起始标签及标记实体，需要用`&amp;lt;`和`&amp;amp;`</span><br><span class="line"></span><br><span class="line"># 表格</span><br><span class="line">见示例  </span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
