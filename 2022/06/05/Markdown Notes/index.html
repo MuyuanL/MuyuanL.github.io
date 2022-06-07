@@ -21,15 +21,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"muyuanl.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="换行两行之间要有一整个空行（两次回车）。标题行前后会自动换行。 123First sentenceSecond sentence 标题用#数量代表标题等级1~6个#代表不同标题等级。由于兼容性问题，最好在后面跟一个空格 # Heading 1 ### Heading 3 ###### Heading 6 用若干个&#x3D;或者-一行下用一个或多个多个&#x3D;可以变成标题1 一行下用一个或多个多个-可以变成标题2">
+    <meta name="description" content="换行换段两段之间要有一整个空行（两次回车）。 123First paragraphSecond paragraph  两行之间要有两个空格及一个换行。 12First line  Second line  分割线可以用三个星号 *** 标题用#数量代表标题等级1~6个#代表不同标题等级。由于兼容性问题，最好在后面跟一个空格 # Heading 1 ### Heading 3 ###### Head">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Markdown简易语法笔记">
 <meta property="og:url" content="https://muyuanl.github.io/2022/06/05/Markdown%20Notes/index.html">
 <meta property="og:site_name" content="Muyuan Blog">
-<meta property="og:description" content="换行两行之间要有一整个空行（两次回车）。标题行前后会自动换行。 123First sentenceSecond sentence 标题用#数量代表标题等级1~6个#代表不同标题等级。由于兼容性问题，最好在后面跟一个空格 # Heading 1 ### Heading 3 ###### Heading 6 用若干个&#x3D;或者-一行下用一个或多个多个&#x3D;可以变成标题1 一行下用一个或多个多个-可以变成标题2">
+<meta property="og:description" content="换行换段两段之间要有一整个空行（两次回车）。 123First paragraphSecond paragraph  两行之间要有两个空格及一个换行。 12First line  Second line  分割线可以用三个星号 *** 标题用#数量代表标题等级1~6个#代表不同标题等级。由于兼容性问题，最好在后面跟一个空格 # Heading 1 ### Heading 3 ###### Head">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-06-05T03:31:32.000Z">
-<meta property="article:modified_time" content="2022-06-06T14:17:42.858Z">
+<meta property="article:modified_time" content="2022-06-07T01:28:40.718Z">
 <meta property="article:author" content="Muyuan Li">
 <meta property="article:tag" content="Markdown">
 <meta property="article:tag" content="Chinese">
@@ -63,6 +63,9 @@
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -83,6 +86,10 @@
 
 
 
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+  </ul>
+</nav>
 
 
 
@@ -111,7 +118,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8D%A2%E8%A1%8C"><span class="nav-number">1.</span> <span class="nav-text">换行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%87%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8-%E6%95%B0%E9%87%8F%E4%BB%A3%E8%A1%A8%E6%A0%87%E9%A2%98%E7%AD%89%E7%BA%A7"><span class="nav-number">2.1.</span> <span class="nav-text">用#数量代表标题等级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E8%8B%A5%E5%B9%B2%E4%B8%AA-%E6%88%96%E8%80%85"><span class="nav-number">2.2.</span> <span class="nav-text">用若干个&#x3D;或者-</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8D%A2%E8%A1%8C%E6%8D%A2%E6%AE%B5"><span class="nav-number">1.</span> <span class="nav-text">换行换段</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%87%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8-%E6%95%B0%E9%87%8F%E4%BB%A3%E8%A1%A8%E6%A0%87%E9%A2%98%E7%AD%89%E7%BA%A7"><span class="nav-number">2.1.</span> <span class="nav-text">用#数量代表标题等级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E8%8B%A5%E5%B9%B2%E4%B8%AA-%E6%88%96%E8%80%85"><span class="nav-number">2.2.</span> <span class="nav-text">用若干个&#x3D;或者-</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%BC%E5%BC%8F"><span class="nav-number">3.</span> <span class="nav-text">格式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%97%E8%A1%A8"><span class="nav-number">4.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%95%E7%94%A8"><span class="nav-number">5.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-number">6.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AC%E4%B9%89"><span class="nav-number">7.</span> <span class="nav-text">转义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A1%A8%E6%A0%BC"><span class="nav-number">8.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%93%BE%E6%8E%A5%E5%8F%8A%E5%9B%BE%E7%89%87"><span class="nav-number">9.</span> <span class="nav-text">链接及图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E6%8A%80%E5%B7%A7"><span class="nav-number">10.</span> <span class="nav-text">其他技巧</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -216,7 +223,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-06-06 22:17:42" itemprop="dateModified" datetime="2022-06-06T22:17:42+08:00">2022-06-06</time>
+      <time title="Modified: 2022-06-07 09:28:40" itemprop="dateModified" datetime="2022-06-07T09:28:40+08:00">2022-06-07</time>
     </span>
 
   
@@ -229,17 +236,69 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h1><p>两行之间要有一整个空行（两次回车）。标题行前后会自动换行。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">First sentence</span><br><span class="line"></span><br><span class="line">Second sentence</span><br></pre></td></tr></table></figure>
+        <h1 id="换行换段"><a href="#换行换段" class="headerlink" title="换行换段"></a>换行换段</h1><p>两段之间要有一整个空行（两次回车）。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">First paragraph</span><br><span class="line"></span><br><span class="line">Second paragraph</span><br></pre></td></tr></table></figure>
+<hr>
+<p>两行之间要有两个空格及一个换行。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">First line  </span><br><span class="line">Second line</span><br></pre></td></tr></table></figure>
+<hr>
+<p>分割线可以用三个星号</p>
+<p><code>***</code></p>
 <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h2 id="用-数量代表标题等级"><a href="#用-数量代表标题等级" class="headerlink" title="用#数量代表标题等级"></a>用<code>#</code>数量代表标题等级</h2><p>1~6个<code>#</code>代表不同标题等级。由于兼容性问题，最好在后面跟一个空格</p>
 <p><code># Heading 1</code></p>
 <p><code>### Heading 3</code></p>
 <p><code>###### Heading 6</code></p>
-<h2 id="用若干个-或者"><a href="#用若干个-或者" class="headerlink" title="用若干个=或者-"></a>用若干个<code>=</code>或者<code>-</code></h2><p>一行下用一个或多个多个<code>=</code>可以变成标题1</p>
-<p>一行下用一个或多个多个<code>-</code>可以变成标题2</p>
-<p><code>=</code>或<code>-</code>的数量应该无所谓，但那一行不能出现其他字符</p>
-<p>如果某一行就是要<code>=</code>或者<code>-</code>作为内容的话，注意把上一行留空</p>
+<h2 id="用若干个-或者"><a href="#用若干个-或者" class="headerlink" title="用若干个=或者-"></a>用若干个<code>=</code>或者<code>-</code></h2><p>一行下用一个或多个多个<code>=</code>可以变成标题1<br>一行下用一个或多个多个<code>-</code>可以变成标题2</p>
+<p><code>=</code>或<code>-</code>的数量应该无所谓，但那一行不能出现其他字符<br>如果某一行就是要<code>=</code>或者<code>-</code>作为内容的话，注意把上一行留空</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Heading 1</span><br><span class="line">==========</span><br><span class="line">Heading 2</span><br><span class="line">--</span><br></pre></td></tr></table></figure>
+
+<h1 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h1><p>星号或者下划线，<em>单斜</em> <strong>双粗</strong> <em><strong>三粗斜</strong></em><br>词内前后无空格，只能星号</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">**bold**</span><br><span class="line">__bold__</span><br><span class="line">*italic*</span><br><span class="line">_italic_</span><br><span class="line">***bold italic***</span><br><span class="line">___bold italic___</span><br></pre></td></tr></table></figure>
+<hr>
+<p><u>下划线</u>通过html<code>&lt;u&gt;&lt;/u&gt;</code>实现<br>删除线双波浪  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;u&gt;underline&lt;/u&gt;</span><br><span class="line">~~deleted~~</span><br></pre></td></tr></table></figure>
+<hr>
+<p>剧透框前方加大于感叹，并不是所有的Markdown都支持  </p>
+<blockquote>
+<p>!效果测试<br><code>&gt;!spoiler</code></p>
+</blockquote>
+<hr>
+<p>脚注见示例 <a href="example">^1</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">some texts [^ligma]</span><br><span class="line"></span><br><span class="line">[`ligma]: balls</span><br></pre></td></tr></table></figure>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><ul>
+<li>无序列表可以用<code>*</code>，<code>+</code>或<code>-</code>任意一种在一行开头，后跟空格。</li>
+<li>比如 <code>* list item 1</code></li>
+</ul>
+<hr>
+<ol>
+<li>有序列表用<code>&lt;数字&gt;. </code>表示，数字本身并无关。</li>
+<li>比如 <code>1. first item</code></li>
+</ol>
+<hr>
+<ol>
+<li>嵌套用tab或四个空格分开<ul>
+<li>可以有序无序混用</li>
+</ul>
+</li>
+<li>比如  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. Item 1</span><br><span class="line">	+ item 1.1</span><br><span class="line">	+ item 1.2</span><br><span class="line">2. Item 2</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
+<p>引用用开头的<code>&gt;</code>来表示，可以套用多个，已经列表等格式<br><code>&gt; Ligma</code></p>
+</blockquote>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>用斜引号&#96;`&#96;，段落中单个环绕，大段代码三个环绕。三个环绕时可第一行制定语言</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\`\`\`java</span><br><span class="line">void fun()&#123;</span><br><span class="line">	System.out.println(&quot;Hi!&quot;);</span><br><span class="line">&#125;</span><br><span class="line">\`\`\`</span><br></pre></td></tr></table></figure>
+
+<h1 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h1><p>可以用反斜线<code>\\</code>进行特殊字符的转义。</p>
+<p>特殊字符<code>&lt;</code>以及<code>&amp;</code>因为可用于html的起始标签及标记实体，需要用<code>&amp;lt;</code>和<code>&amp;amp;</code></p>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><p>见示例  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+
+<h1 id="链接及图片"><a href="#链接及图片" class="headerlink" title="链接及图片"></a>链接及图片</h1><p>链接使用<code>[name](url)</code>或直接<code>&lt;url&gt;</code><br>图片使用<code>![alt_attr](url)</code>或<code>![alt_attr](url title)</code></p>
+<h1 id="其他技巧"><a href="#其他技巧" class="headerlink" title="其他技巧"></a>其他技巧</h1><p>html元素支持<code>&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;</code><br>比如  </p>
+<pre><code>&lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt;
+</code></pre>
+<p>显示为<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd></p>
+
     </div>
 
     
