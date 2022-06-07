@@ -21,17 +21,19 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"muyuanl.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="article">
+    <meta name="description" content="IntroductionJohn is traveling from the US to Japan. However, he has zero knowledge on Japanese, and he is trying to choose a translator for himself during the trip. How could he measure the performanc">
+<meta property="og:type" content="article">
 <meta property="og:title" content="CycleGAN">
 <meta property="og:url" content="https://muyuanl.github.io/2022/06/07/CycleGAN/index.html">
 <meta property="og:site_name" content="Muyuan Blog">
+<meta property="og:description" content="IntroductionJohn is traveling from the US to Japan. However, he has zero knowledge on Japanese, and he is trying to choose a translator for himself during the trip. How could he measure the performanc">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-06-07T03:22:52.000Z">
-<meta property="article:modified_time" content="2022-06-07T03:24:07.375Z">
+<meta property="article:modified_time" content="2022-06-07T04:34:38.060Z">
 <meta property="article:author" content="Muyuan Li">
-<meta property="article:tag" content="Cycle GAN">
 <meta property="article:tag" content="GAN">
 <meta property="article:tag" content="English">
+<meta property="article:tag" content="CycleGAN">
 <meta name="twitter:card" content="summary">
 
 
@@ -104,7 +106,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -117,6 +119,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Model-Explanation"><span class="nav-number">2.</span> <span class="nav-text">Model Explanation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#High-Level-Idea"><span class="nav-number">2.1.</span> <span class="nav-text">High Level Idea</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#References"><span class="nav-number">3.</span> <span class="nav-text">References</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -215,7 +218,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-06-07 11:22:52 / Modified: 11:24:07" itemprop="dateCreated datePublished" datetime="2022-06-07T11:22:52+08:00">2022-06-07</time>
+      <time title="Created: 2022-06-07 11:22:52 / Modified: 12:34:38" itemprop="dateCreated datePublished" datetime="2022-06-07T11:22:52+08:00">2022-06-07</time>
     </span>
 
   
@@ -228,7 +231,14 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        
+        <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>John is traveling from the US to Japan. However, he has zero knowledge on Japanese, and he is trying to choose a translator for himself during the trip. How could he measure the performance of a translator that translates from English to Japanese and the other way around, without knowing any Japanese at all?</p>
+<p>One of the solutions, is that John can come up with a few English sentences, translate them into Japanese, then translate these intermediate results back to English. He can then compare the original sentences with the results, and the closer they look like, the better the translator performs. </p>
+<p>This is the basic idea for CycleGAN. Besides trying to fool the discriminator on the other domain, the model also converts the generated output back to the original domain and check the difference from the original input. </p>
+<h1 id="Model-Explanation"><a href="#Model-Explanation" class="headerlink" title="Model Explanation"></a>Model Explanation</h1><h2 id="High-Level-Idea"><a href="#High-Level-Idea" class="headerlink" title="High Level Idea"></a>High Level Idea</h2><h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><p><a target="_blank" rel="noopener" href="https://junyanz.github.io/CycleGAN/">CycleGAN Project Site</a>  </p>
+<!---
+Links to paper
+-->
+
     </div>
 
     
@@ -237,9 +247,9 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Cycle-GAN/" rel="tag"># Cycle GAN</a>
               <a href="/tags/GAN/" rel="tag"># GAN</a>
               <a href="/tags/English/" rel="tag"># English</a>
+              <a href="/tags/CycleGAN/" rel="tag"># CycleGAN</a>
           </div>
 
         
