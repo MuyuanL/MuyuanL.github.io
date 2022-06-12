@@ -208,9 +208,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2022-06-07 11:22:52 / Modified: 12:34:38" itemprop="dateCreated datePublished" datetime="2022-06-07T11:22:52+08:00">2022-06-07</time>
+      <time title="Created: 2022-06-07 11:22:52" itemprop="dateCreated datePublished" datetime="2022-06-07T11:22:52+08:00">2022-06-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-06-10 22:07:21" itemprop="dateModified" datetime="2022-06-10T22:07:21+08:00">2022-06-10</time>
     </span>
 
   
@@ -226,7 +232,8 @@
           <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>John is traveling from the US to Japan. However, he has zero knowledge on Japanese, and he is trying to choose a translator for himself during the trip. How could he measure the performance of a translator that translates from English to Japanese and the other way around, without knowing any Japanese at all?</p>
 <p>One of the solutions, is that John can come up with a few English sentences, translate them into Japanese, then translate these intermediate results back to English. He can then compare the original sentences with the results, and the closer they look like, the better the translator performs. </p>
 <p>This is the basic idea for CycleGAN. Besides trying to fool the discriminator on the other domain, the model also converts the generated output back to the original domain and check the difference from the original input. </p>
-<h1 id="Model-Explanation"><a href="#Model-Explanation" class="headerlink" title="Model Explanation"></a>Model Explanation</h1><h2 id="High-Level-Idea"><a href="#High-Level-Idea" class="headerlink" title="High Level Idea"></a>High Level Idea</h2><h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><p><a target="_blank" rel="noopener" href="https://junyanz.github.io/CycleGAN/">CycleGAN Project Site</a>  </p>
+<h1 id="Model-Explanation"><a href="#Model-Explanation" class="headerlink" title="Model Explanation"></a>Model Explanation</h1><h2 id="High-Level-Idea"><a href="#High-Level-Idea" class="headerlink" title="High Level Idea"></a>High Level Idea</h2><p>The model converts between two domains, A and B respectively. Generator $G_{AB}$ aims to convert A to B, while generator G_{BA} converts B to A. As a GAN, the model also has two discriminators - </p>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><p><a target="_blank" rel="noopener" href="https://junyanz.github.io/CycleGAN/">CycleGAN Project Site</a>  </p>
 <!---
 Links to paper
 -->
@@ -292,7 +299,7 @@ Links to paper
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-06-07 11:49:20" itemprop="dateModified" datetime="2022-06-07T11:49:20+08:00">2022-06-07</time>
+      <time title="Modified: 2022-06-11 21:45:01" itemprop="dateModified" datetime="2022-06-11T21:45:01+08:00">2022-06-11</time>
     </span>
 
   
@@ -331,7 +338,7 @@ Links to paper
 <hr>
 <p>脚注见示例 [^1]</p>
 <p>[^1]: This is the first footnote.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">some texts [^ligma]</span><br><span class="line"></span><br><span class="line">[`ligma]: balls</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">some texts [^ligma]</span><br><span class="line"></span><br><span class="line">[^ligma]: balls</span><br></pre></td></tr></table></figure>
 
 <h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><ul>
 <li>无序列表可以用<code>*</code>，<code>+</code>或<code>-</code>任意一种在一行开头，后跟空格。</li>
@@ -353,7 +360,7 @@ Links to paper
 <h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
 <p>引用用开头的<code>&gt;</code>来表示，可以套用多个，已经列表等格式<br><code>&gt; Ligma</code></p>
 </blockquote>
-<h1 id="LaTeX"><a href="#LaTeX" class="headerlink" title="LaTeX"></a>LaTeX</h1><p>局内使用<code>$</code>，段落使用<code>$$</code>环绕LaTex语句。<br>$$<br>\alpha \ge 5<br>$$</p>
+<h1 id="LaTeX"><a href="#LaTeX" class="headerlink" title="LaTeX"></a>LaTeX</h1><p>局内使用<code>$</code>，段落使用<code>$$</code>环绕LaTex语句。(目前博客不支持)  </p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\alpha \ge 5</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
 
 <h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>用斜引号`，段落中单个环绕，大段代码三个环绕。三个环绕时可第一行指定语言</p>
